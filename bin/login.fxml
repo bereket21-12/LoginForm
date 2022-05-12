@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #4856f1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logincontroller">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="60.0" prefWidth="300.0" text="Wku Login Form" textFill="#fceaea">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="80.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="56.0" prefWidth="521.0">
+         <children>
+            <Label alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" text="Email" textFill="#fcfafa">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="emailfiled" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="180.0">
+               <HBox.margin>
+                  <Insets left="40.0" right="30.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="521.0">
+         <children>
+            <Label text="Password" textFill="#e8dddd">
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordfiled" prefHeight="25.0" prefWidth="180.0">
+               <HBox.margin>
+                  <Insets left="10.0" right="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox prefHeight="49.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="error_msg" />
+            <Label fx:id="error_msg" textFill="#ebeeb9">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="59.0" prefWidth="521.0">
+         <children>
+            <Button fx:id="loginbtn" mnemonicParsing="false" onAction="#loginbtn_on_acton" text="login" textFill="#3c1bd0">
+               <HBox.margin>
+                  <Insets left="150.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="sinin_btn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#sinin_btn_onaction" text="sign in" textFill="#222e9a" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
