@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #4856f1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login2controller">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Please fill the following information to sign in" textFill="#fffbfb" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="26.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="43.0" prefWidth="580.0">
+         <children>
+            <Label text="Email" textFill="#fff7f7fa">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="emailfield" prefHeight="25.0" prefWidth="185.0">
+               <HBox.margin>
+                  <Insets left="75.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="42.0" prefWidth="580.0">
+         <children>
+            <Label text="Password" textFill="#fffafa">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passwordfield" prefHeight="25.0" prefWidth="186.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="49.0" prefWidth="580.0">
+         <children>
+            <Label text="Firstname" textFill="#eee9e9">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstnamefield" prefHeight="25.0" prefWidth="191.0">
+               <HBox.margin>
+                  <Insets left="38.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="48.0" prefWidth="580.0">
+         <children>
+            <Label text="Lastname" textFill="#e1dcdc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastnamefeild" prefHeight="25.0" prefWidth="190.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="46.0" prefWidth="580.0">
+         <children>
+            <Label text="Gender" textFill="#fff6f6">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="genderfeild" prefHeight="25.0" prefWidth="187.0">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="34.0" prefWidth="522.0">
+         <children>
+            <Label fx:id="info_lable" prefHeight="21.0" prefWidth="400.0" textFill="#f5e8e8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="150.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="32.0" prefWidth="380.0">
+         <children>
+            <Button fx:id="sign_in_btn" mnemonicParsing="false" onAction="#sign_in_btn_on_action" text="sign in" textFill="#171fb5">
+               <HBox.margin>
+                  <Insets left="200.0" right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="backbtn" mnemonicParsing="false" onAction="#backbtn" text="Back" textFill="#1735a1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
